@@ -20,7 +20,8 @@ namespace Hazel {
 	};
 }
 
-
+// The benefit of having the logs be macros is that, in distribution builds, you can just redefine the macros
+// to do nothing, saving performance
 // Core macros
 
 #define HZ_CORE_TRACE(...)     ::Hazel::Log::GetCoreLogger()->trace(__VA_ARGS__)
