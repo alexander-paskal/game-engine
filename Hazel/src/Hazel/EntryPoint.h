@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 	// defining one?
 
 	HZ_CORE_WARN("Initialized Log");
-	int a = 5;
+	int a = 8;
 	HZ_INFO("Hello!, VAR = {0}", a);
 
 	

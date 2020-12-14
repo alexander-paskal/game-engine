@@ -13,6 +13,7 @@ namespace Hazel {
 	};
 	
 	// to be defined in client	
+	// functions sort of like an abstract method, I guess?
 	Application* CreateApplication();
 
 }

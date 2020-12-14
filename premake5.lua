@@ -26,10 +26,10 @@ project "Hazel"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"Hazel/vendor/spdlog/include"
 	}
 
-	filter "system:windodws"
+	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "latest"
@@ -63,7 +63,7 @@ project "Hazel"
 
 
 project "Sandbox"
-	location "Hazel"
+	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
 
@@ -78,7 +78,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include",
+		"Hazel/vendor/spdlog/include",
 		"Hazel/src"
 	}
 
@@ -87,7 +87,7 @@ project "Sandbox"
 		"Hazel"
 	}
 
-	filter "system:windodws"
+	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
 		systemversion "latest"
