@@ -96,12 +96,7 @@ project "Sandbox"
 		{
 			HZ_PLATFORM_WINDOWS,			
 		}
-
-		postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. output_dir .. "/Sandbox")
-		}
-
+ 
 	filter "configurations.Debug"
 		defines "HZ_DEBUG"
 		symbols "On"
