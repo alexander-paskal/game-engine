@@ -1,6 +1,6 @@
 workspace "Hazel"
 	architecture "x64"
-
+	startproject "Sandbox"
 	configurations
 	{
 		"Debug",
@@ -34,17 +34,17 @@ project "Hazel"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines
-		{
-			HZ_PLATFORM_WINDOWS,
-			HZ_BUILD_DLL,
+	defines
+	{
+		"HZ_PLATFORM_WINDOWS",
+		"HZ_BUILD_DLL",
 			
-		}
+	}
 
-		postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. output_dir .. "/Sandbox")
-		}
+	postbuildcommands
+	{
+		("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. output_dir .. "/Sandbox")
+	}
 
 	filter "configurations.Debug"
 		defines "HZ_DEBUG"
@@ -92,10 +92,10 @@ project "Sandbox"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines
-		{
-			HZ_PLATFORM_WINDOWS,			
-		}
+	defines
+	{
+		"HZ_PLATFORM_WINDOWS",			
+	}
  
 	filter "configurations.Debug"
 		defines "HZ_DEBUG"
