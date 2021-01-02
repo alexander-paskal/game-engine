@@ -4,7 +4,7 @@
 
 #include "Hazel/Application.h"
 #include "Hazel/Log.h"
-#include <stdio.h>
+#include "hzpch.h"
 
 //===EntryPoint=============
 #include "Hazel/EntryPoint.h"
